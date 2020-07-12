@@ -1,13 +1,12 @@
 # main.py
 # entry point
 
-from flask import Flask
-main = Flask(__name__)
+import streamlit as st
 
-@app.route('/')
 def main():
     from pycaret.utils import version
-    return version
+    ver = version()
+    st.sidebar.success(ver + ' succesfully loaded.')
 
 if __name__ == '__main__':
-    main.run(debug = True)
+    main()

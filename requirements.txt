@@ -1,2 +1,2 @@
 pycaret-nightly
-Flask
+streamlit
